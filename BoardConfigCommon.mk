@@ -48,7 +48,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/samsung/noblelte
-TARGET_USES_UNCOMPRESSED_KERNEL := true
+# TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -181,3 +181,6 @@ BOARD_SEPOLICY_DIRS += device/samsung/noblelte-common/sepolicy
 
 # Seccomp filters
 BOARD_SECCOMP_POLICY := device/samsung/noblelte-common/seccomp
+
+# Kernel name
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
