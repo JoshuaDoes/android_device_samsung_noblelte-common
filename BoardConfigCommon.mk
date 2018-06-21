@@ -5,7 +5,7 @@ TARGET_NO_RADIOIMAGE := true
 
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
-TARGET_SLSI_VARIANT := cm
+TARGET_SLSI_VARIANT := lineage
 TARGET_SOC := exynos7420
 
 # CPU
@@ -107,8 +107,8 @@ BOARD_USE_VP8ENC_SUPPORT := true
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Hardware
-BOARD_HARDWARE_CLASS += device/samsung/noblelte-common/cmhw
-BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/noblelte-common/lineagehw
+BOARD_HARDWARE_CLASS += hardware/samsung/lineagehw
 
 # WIFI
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
